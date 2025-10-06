@@ -9,10 +9,11 @@ public class count_digit {
     }
     System.out.println("nayan");
     count++;
-
+    print(n); // recursive call
   }
 
-  public void main(String[] args) {
-    print(5);
+  public static void main(String[] args) {
+    count_digit obj = new count_digit(); // ✅ create object
+    obj.print(5);
   }
 }
