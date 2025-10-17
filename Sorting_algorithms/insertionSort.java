@@ -1,7 +1,7 @@
 package Sorting_algorithms;
 
 public class insertionSort {
-  public static void SelectionSort(int[] arr) {
+  public static void InsertionSort(int[] arr) {
     int n = arr.length;
     for (int i = 0; i < n - 1; i++) {
       int j = i;
@@ -21,7 +21,7 @@ public class insertionSort {
       System.out.println(i);
 
     }
-    SelectionSort(arr);
+    InsertionSort(arr);
     System.out.println("Array after sorting");
     for (int i : arr) {
       System.out.println(i);
