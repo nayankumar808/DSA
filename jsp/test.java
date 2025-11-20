@@ -10,7 +10,8 @@ public class test {
     // System.out.println(primeNumbers(n));
     // System.out.println(palindrome(n));
     // System.out.println(perfect(n));
-    System.out.println(strong(n));
+    // System.out.println(strong(n));
+    System.out.println(armstrong(n));
   }
 
   public static boolean primeNumbers(int n) {
@@ -69,6 +70,31 @@ public class test {
       n = n / 10;
     }
     return (sum == num);
+  }
+
+  public static int count(int n) {
+    int t = 0;
+    while (n != 0) {
+      t++;
+      n /= 10;
+
+    }
+    return t;
+  }
+
+  public static boolean armstrong(int n) {
+    int num = n;
+    int digit = 0;
+    int num2 = 0;
+    int length = count(n);
+
+    while (num != 0) {
+      digit = num % 10;
+      num2 += (int) Math.pow(digit, length);
+      num /= 10;
+
+    }
+    return (n == num2);
   }
 
 }
