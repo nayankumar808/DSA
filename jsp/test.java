@@ -5,16 +5,26 @@ import java.util.Scanner;
 public class test {
   public static void main(String[] args) {
     Scanner scn = new Scanner(System.in);
+    System.out.println("Enter the value of n1");
+    int n1 = scn.nextInt();
     System.out.println("Enter the value of n");
-    int n = scn.nextInt();
+    int n2 = scn.nextInt();
+
     // System.out.println(primeNumbers(n));
     // System.out.println(palindrome(n));
     // System.out.println(perfect(n));
     // System.out.println(strong(n));
-    System.out.println(armstrong(n));
+    range(n1, n2);
   }
 
-  public static boolean primeNumbers(int n) {
+  public static void range(int start, int end) {
+    for (int i = start; i <= end; i++) {
+      if (ispalindrome(i))
+        System.out.println(i);
+    }
+  }
+
+  public static boolean isprimeNumbers(int n) {
     int count = 0;
     for (int i = 1; i <= n; i++) {
       if (n % i == 0)
@@ -27,7 +37,7 @@ public class test {
     }
   }
 
-  public static boolean palindrome(int n) {
+  public static boolean ispalindrome(int n) {
     int num = n;
     int digit = 0;
     int reverse = 0;
@@ -41,7 +51,7 @@ public class test {
     return (reverse == n);
   }
 
-  public static boolean perfect(int n) {
+  public static boolean isperfect(int n) {
     int num = 0;
     for (int i = 1; i < n; i++) {
       if (n % i == 0) {
@@ -60,7 +70,7 @@ public class test {
     return fact;
   }
 
-  public static boolean strong(int n) {
+  public static boolean isStrong(int n) {
     int num = n;
     int digit = 0;
     int sum = 0;
@@ -82,7 +92,7 @@ public class test {
     return t;
   }
 
-  public static boolean armstrong(int n) {
+  public static boolean isArmstrong(int n) {
     int num = n;
     int digit = 0;
     int num2 = 0;
