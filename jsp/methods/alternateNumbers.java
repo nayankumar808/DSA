@@ -1,4 +1,4 @@
-package jsp;
+package jsp.methods;
 
 public class alternateNumbers {
   public static void main(String[] args) {

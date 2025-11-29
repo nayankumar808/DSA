@@ -1,4 +1,4 @@
-package jsp;
+package jsp.methods;
 
 import java.util.Scanner;
 
