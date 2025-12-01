@@ -1,12 +1,15 @@
 package jsp.basic_Recursion;
 
 public class sumOfdigit {
-  public static void main (String[] args){
+  public static void main(String[] args) {
+    System.out.println(sum(12345));
+  }
+
+  public static int sum(int n) {
+    if (n < 10)
+      return n;
+    return sum((n % 10) + sum(n / 10));
 
   }
-  public static int sum(int n , int sum){
-    if(n!=0)return sum;
-    int a = n%10 + s
-  }
-  
+
 }
