@@ -4,7 +4,6 @@ public class StaticBlocks2 {
   static int i;
   static {
     i = 10;
-
   }
   static {
     i = 20;
